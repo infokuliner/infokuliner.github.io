@@ -31,17 +31,23 @@ main { background: #fff; flex-grow: 1; padding: 1rem 1rem;
 img { max-width: 95%; height: auto;
 display: block; margin: 2rem auto 2rem auto;
 border-radius: 8px; }
+.kotak { border-radius: 8px; margin: 1rem; padding: 1rem; box-shadow: .5px .5px 5px .5px rgba(0,0,0,0.1); }
+.kotak a { vertical-align: bottom; font-weight: 450; }
+.kotak h2 a { color: #2c3e50; }
+h1, h2, h3, h4 { margin-top: 0; color: #2c3e50; }
 h1, h2, h3, h4 { margin-top: 0; color: #2c3e50; }
 p { margin-top: 0; margin-bottom: 1rem; }
+ul, ol { margin-top: 0; margin-bottom: 1rem; padding-left: 1.25rem; }
+li { margin-bottom: 0.2rem; }
 
 /* Ruang antar section */
 section + section { margin-top: 2rem; }
 
 /* Footer */
-footer { background: #ecf0f1; color: #7f8c8d;
+footer { background: #23401C; color: #eee;
 padding: 1rem 1.5rem; font-size: 0.9rem;
-user-select: none; }
-footer a { color: #7f8c8d; }
+user-select: none; box-shadow: 0 15px 15px 15px #777777; }
+footer a { color: #FFFF00; }
 footer .copyright { text-align: center; }
 </style>
 </head>
@@ -61,26 +67,86 @@ Info Kuliner
 <h1>
 Kreasi Sayur Asem
 </h1>
-<img src="assets/images/sayur-asam.jpg" />
+<img src="assets/images/sayur-asam.jpg" alt="Gambar Sayur Asem" />
 <p>Sayur asem biasanya dikenal sebagai masakan rumahan yang sederhana. Tapi sebenarnya, dengan sedikit kreativitas, sayur asem bisa dibuat lebih unik, segar, dan menarik tanpa menghilangkan cita rasa tradisionalnya.</p>
-<p><h2>🥬 Resep Sayur Asem Bening Green Tomato</h2>🛒 <b>Bahan-bahan:</b><br /> <br />- 1 buah jagung manis, potong-potong<br />- 1 genggam kacang tanah mentah<br />- 2 genggam long bean, potong-potong<br />- 2 buah green tomato, potong-potong<br />- 1 genggam kulit melinjo, rebus sebentar<br />- 1 buah labu siam, potong dadu<br />- 1 ikat kecil daun melinjo<br />- Air secukupnya<br /> <br />🧂 <b>Bumbu:</b><br /> <br />- 5 siung bawang merah, iris<br />- 4 siung bawang putih, iris<br />- 2 buah cabai merah besar, iris<br />- 2 cm lengkuas, geprek<br />- 3-5 biji asam Jawa<br />- 2 lembar daun salam<br />- Garam, gula pasir, dan kaldu ayam secukupnya<br /> <br /><b>Cara Membuat:</b><br /> <br />1.&nbsp;Siapkan panci berisi air, masukkan jagung dan kacang tanah. Masak hingga mendidih.<br /><br />2.&nbsp;Masukkan bawang merah, bawang putih, dan cabai iris. Aduk rata.<br /><br />3.&nbsp;Tambahkan asam jawa, lengkuas, dan daun salam. Masak hingga harum.<br /><br />4.&nbsp;Masukkan kacang panjang, labu siam, tomat hijau, dan kulit melinjo. Masak hingga sayuran matang.<br /><br />5.&nbsp;Tambahkan garam, gula, dan kaldu ayam. Koreksi rasa.<br /><br />6.&nbsp;Terakhir, masukkan daun melinjo, masak sebentar saja agar tetap hijau segar. Matikan api.<br /><br />7.&nbsp;Sajikan hangat dengan tempe goreng dan sambal terasi!</p>
-<p>---</p>
+<div class="kotak"><h2>🥬 Resep Sayur Asem Bening Green Tomato</h2>
+🛒 <b>Bahan-bahan:</b>
+<ul>
+<li>1 buah jagung manis, potong-potong</li>
+<li>1 genggam kacang tanah mentah</li>
+<li>2 genggam long bean, potong-potong</li>
+<li>2 buah green tomato, potong-potong</li>
+<li>1 genggam kulit melinjo, rebus sebentar</li>
+<li>1 buah labu siam, potong dadu</li>
+<li>1 ikat kecil daun melinjo</li>
+<li>Air secukupnya</li>
+</ul>
+
+🧂 <b>Bumbu:</b>
+<ul>
+<li>5 siung bawang merah, iris</li>
+<li>4 siung bawang putih, iris</li>
+<li>2 buah cabai merah besar, iris</li>
+<li>2 cm lengkuas, geprek</li>
+<li>3-5 biji asam Jawa</li>
+<li>2 lembar daun salam</li>
+<li>Garam, gula pasir, dan kaldu ayam secukupnya</li>
+</ul>
+
+<b>Cara Membuat:</b>
+<ol>
+<li>Siapkan panci berisi air, masukkan jagung dan kacang tanah. Masak hingga mendidih.</li>
+<li>Masukkan bawang merah, bawang putih, dan cabai iris. Aduk rata.</li>
+<li>Tambahkan asam jawa, lengkuas, dan daun salam. Masak hingga harum.</li>
+<li>Masukkan kacang panjang, labu siam, tomat hijau, dan kulit melinjo. Masak hingga sayuran matang.</li>
+<li>Tambahkan garam, gula, dan kaldu ayam. Koreksi rasa.</li>
+<li>Terakhir, masukkan daun melinjo, masak sebentar saja agar tetap hijau segar. Matikan api.</li>
+<li>Sajikan hangat dengan tempe goreng dan sambal terasi!</li>
+</ol>
+
+</div>
+
 <h2>Berikut beberapa tips sayur asem yang unik dan kreatif:</h2>
 <h3>1. Gunakan Asem dari Buah yang Berbeda</h3><p>Biasanya sayur asem memakai tamarind (asam jawa). Tapi Ada bisa mencoba variasi lain seperti:</p>
-<p>- Belimbing wuluh untuk rasa asem segar alami<br />- Kedondong yang memberi aroma unik<br />- Mangga muda agar rasa lebih segar dan sedikit manis</p>
+<ul>
+<li>Belimbing wuluh untuk rasa asem segar alami</li>
+<li>Kedondong yang memberi aroma unik</li>
+<li>Mangga muda agar rasa lebih segar dan sedikit manis</li>
+</ul>
+
 <p>Ini membuat sayur asem terasa lebih &ldquo;hidup&rdquo; dan berbeda dari biasanya.</p>
 <h3>2. Tambahkan Bahan yang Tidak Biasa</h3><p>Selain bahan klasik seperti corn, chayote, Anda bisa menambahkan:</p>
-<p>- Jamur tiram<br />- Tahu goreng potong dadu<br />- Tempe semangit (untuk aroma khas)<br />- Daun melinjo muda</p>
+<ul>
+<li>Jamur tiram</li>
+<li>Tahu goreng potong dadu</li>
+<li>Tempe semangit (untuk aroma khas)</li>
+<li>Daun melinjo muda</li>
+</ul>
+
 <p>Tambahan ini membuat tekstur dan rasa lebih beragam.</p>
 <h3>3. Sayur Asem Pedas Segar</h3><p>Tambahkan irisan bird's eye chili saat memasak.<br />Rasa pedas yang ringan akan membuat kuah terasa lebih segar, terutama saat dimakan siang hari.</p>
 <h3>4. Gunakan Bumbu Sangrai</h3><p>Sebelum dimasukkan ke dalam kuah, coba sangrai sebentar bumbu seperti:</p>
-<p>- Bawang merah<br />- Bawang putih<br />- Terasi</p>
+<ul>
+<li>Bawang merah</li>
+<li>Bawang putih</li>
+<li>Terasi</li>
+</ul>
+
 <p>Cara ini akan menghasilkan aroma yang lebih kuat dan menggugah selera.</p>
 <h3>5. Sayur Asem Kuah Bening Premium</h3><p>Untuk tampilan yang lebih cantik:</p>
-<p>- Gunakan potongan sayur yang rapi<br />- Jangan terlalu lama memasak agar warna tetap cerah<br />- Tambahkan sedikit daun kemangi di akhir</p>
+<ul>
+<li>Gunakan potongan sayur yang rapi</li>
+<li>Jangan terlalu lama memasak agar warna tetap cerah</li>
+<li>Tambahkan sedikit daun kemangi di akhir</li>
+</ul>
+
 <p>Kuah bening yang segar membuat sayur terlihat lebih &ldquo;modern&rdquo;.</p>
 <h3>6. Sayur Asem dengan Sentuhan Nusantara</h3><p>Setiap daerah punya gaya sendiri. Anda bisa menggabungkan inspirasi dari beberapa daerah:</p>
-<p>- Gunakan galangal lebih banyak untuk aroma Jawa<br />- Tambahkan irisan green tomato agar lebih segar</p>
+<ul>
+<li>Gunakan galangal lebih banyak untuk aroma Jawa</li>
+<li>Tambahkan irisan green tomato agar lebih segar</li>
+</ul>
+
 <p>✅ <b>Tips tambahan:</b><br />Masukkan sayuran secara bertahap sesuai tingkat kerasnya. Sayur keras seperti corn dimasak dulu, baru sayuran lembut seperti long beans agar tidak terlalu lembek.</p>
 <p>👉 Pakai sedikit santan bisa enak, tapi rasanya akan sedikit berbeda dari sayur asem yang biasanya segar dan ringan. Jika ditambahkan sedikit coconut milk, kuah sayur asem akan terasa lebih gurih, lembut, dan agak creamy.</p>
 <p>Namun ada beberapa tips supaya tetap enak:</p>
@@ -90,7 +156,11 @@ Kreasi Sayur Asem
 <p>Pastikan rasa asamnya tetap terasa. Biasanya dari tamarind atau bisa juga dari belimbing wuluh.</p>
 <h4>3. Cocok Ditambah Bumbu Harum</h4>
 <p>Supaya rasanya lebih mantap, bisa tambahkan:</p>
-<p>- Galangal/laos<br />- Bay leaf/daun salam</p>
+<ul>
+<li>Galangal/laos</li>
+<li>Bay leaf/daun salam</li>
+</ul>
+
 <p>Aromanya jadi lebih khas.</p>
 <h4>4. Masukkan Santan di Akhir</h4>
 <p>Masukkan coconut milk di akhir masakan sambil diaduk perlahan supaya tidak pecah.</p>
@@ -98,7 +168,6 @@ Kreasi Sayur Asem
 
 </main>
 <footer>
-<b>Useful Link:</b><br />
 <a href="https://kios-aneka.blogspot.com/" target="_blank">Secangkir Cerita & Fakta</a><br />
 <a href="https://www.facebook.com/profile.php?id=61550107204825" target="_blank">Follow me on Facebook</a><br />
 <br />
