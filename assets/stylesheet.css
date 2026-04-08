@@ -55,7 +55,7 @@ box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; height: 350px;
 .kartu img { float: left; width: 80px; height: auto;
 margin: .3rem 1rem 1rem 0; }
 
-.gbr-mskn img { max-width: 800px; height: auto; display: block; box-shadow: 4px 4px 8px rgba(0,0,0,0.1); border: 15px white; margin: 2rem auto 2rem; }
+.gbr-mskn img { max-width: 95%; height: auto; display: block; box-shadow: 4px 4px 8px rgba(0,0,0,0.1); border: 15px white; margin: 2rem auto 2rem; }
 
 .kotak { margin: 1rem 0; padding: 1rem; border-radius:20px;
 box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7;
