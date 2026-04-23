@@ -1,10 +1,10 @@
 /* Reset dan dasar */
 *, *::before, *::after { box-sizing: border-box; }
 /* 2.2vw = 14px = 0.85rem */
-html { font-size: clamp(.85rem, 2.2vw, .9rem); scroll-behavior: smooth;
+html { font-size: clamp(.8rem, 2.1vw, .85rem); scroll-behavior: smooth;
 -webkit-text-size-adjust: 100%; }
 body { margin: 0; padding: 0;
-font-family: "Space Grotesk", "Open Sans", -apple-system, Roboto, sans-serif;
+font-family: "Inter", -apple-system, Arial;
 color: #2c3e50;
 line-height: 1.3; display: flex; flex-direction: column; min-height: 100vh; }
 
@@ -15,21 +15,21 @@ background: #FFF7EE; }
 
 /* Header */
 header, header img { display: block; width: 100%; height: auto; }
-.menu { background: #F39632; height: 30px; z-index: 3;
-padding: .1rem .625rem; box-shadow: 0 5px 15px #FFB76F; }
+.menu { background: linear-gradient(180deg, #F39632, #F27D00); #; height: 30px; z-index: 3;
+padding: .4rem .6rem; box-shadow: 0 5px 15px #FFB76F; }
 .menu a { color: #fff; }
 
 /* Konten utama */
 main { flex-grow: 1; padding: 1.5rem; }
 
 a { color: #2c3e50; text-decoration: none; }
-h1, h2, h3, h4 { margin-top: 0; }
-h1, h2, h3 { font-weight: 500; }
+h1, h2, h3, h4 { margin-top: 0; font-family: "Space Grotesk", serif !important; }
+h1, h2, h3 { font-weight: 550; }
 h4 { font-weight: 600; }
 h1 { font-size: 1.35rem; }
 h2 { font-size: 1.25rem; }
 h3 { font-size: 1.15rem; }
-h4 { font-size: 1rem; }
+h4 { font-size: 1.05rem; }
 p { margin-top: 0; }
 
 ul { margin-top: 0; margin-bottom: 1rem; padding-left: 1.25rem; }
@@ -44,12 +44,26 @@ li a { font-weight: 450; }
 .gbr-mskn img { max-width: 95%; height: auto; display: block;
 margin: 2rem auto 2rem; }
 
-.kotak { padding: 1rem; border-radius:20px;
+.kotak { font-size: .9rem; padding: 1rem; border-radius:20px;
 box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; min-height: 250px; }
 .garis-putus { border-top: 3px dashed #FFE0B2; margin-bottom: 2rem; }
 .prev { background: #FFF3E0; padding: .6rem; border-radius: 15px; border: 1.5px solid #FFD9BC; }
 .next { text-align: right; }
 .prev h3 { margin: 0; font-size: 1rem; }
+
+.pita { font-size: .9rem; border-radius: 20px; display: grid;
+box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; }
+.tips, .pin { background: #FFFBF7; }
+.icon { height: 2.5rem; padding: .5rem 1rem; font-size: 1.5rem; text-align: right; }
+.tips-hijau { background: linear-gradient(180deg, #51C16F 85%, #409957); }
+.pin-biru h2 { color: #eee; }
+.tips-hijau h3 { color: #eee; }
+.pin-kuning { background: linear-gradient(180deg, #E8E800 85%, #A8A800); }
+.pin-kuning h2 { color: #333; }
+.pin-biru { background: linear-gradient(180deg, #44A0CE 85%, #347A9E); }
+.judul2 { height: 40px; padding: .5rem; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); }
+.konten2 { padding: 1rem; padding-bottom: 1rem; }
+
 
 /* Ruang antar section */
 section + section { margin-top: 2rem; }
