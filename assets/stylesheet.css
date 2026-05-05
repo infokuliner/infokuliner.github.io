@@ -84,6 +84,10 @@ footer .copyright { text-align: center; }
 .footer-grid { display: grid;
 grid-template-columns: repeat(3, 1fr); }
 
+@media (min-width: 1024px){
+.menu { height: 40px; padding-top: .6rem; }
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
 body { color: #ccc; }
