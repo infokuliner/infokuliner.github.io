@@ -3,7 +3,9 @@
 /* 2.2vw = 14px = 0.85rem */
 @font-face { font-family: 'CuteAurora';
 src: url('assets/CuteAurora.woff2'), url('CuteAurora.woff2') format('woff2'); font-display: swap; }
-html { font-size: 13px; scroll-behavior: smooth;
+@font-face { font-family: 'Satisfy';
+src: url('Satisfy-Regular.woff2') format('woff2'); font-display: swap; }
+html { font-size: 14px; scroll-behavior: smooth;
 -webkit-text-size-adjust: 100%; }
 
 body { width: 100%; margin: 0; padding: 0;
@@ -35,7 +37,7 @@ h2 { font-size: 1.5rem; }
 h3 { font-size: 1.3rem; }
 h4 { font-size: 1.15rem; }
 p { margin-top: 0; }
-.links a, .daftar a, .footer-grid a { font-family: "Trebuchet MS", Arial !important; font-size: 1.2rem; }
+.menu a, .links li a, .daftar li a, .footer-grid li a { font-family: "Trebuchet MS", Arial; font-size: 9rem; }
 
 ul { margin-top: 0; margin-bottom: 1rem; padding-left: 1.25rem; }
 li { margin-bottom: 0.2rem; }
@@ -81,7 +83,7 @@ footer { background: #444; color: #eee;
 padding: 1rem 1.5rem .2rem 1.5rem;
 user-select: none; box-shadow: 0 -5px 15px rgba(68,68,68,.6); }
 footer a { color: #FFFF00; }
-footer .copyright { text-align: center; }
+footer .copyright { font-family: monospace; text-align: center; }
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
