@@ -6,9 +6,7 @@
 <title>Info Kuliner - Lokal dan Manca</title>
 <meta name="description" content="Informasi dan tips-tips seputar kuliner yang unik dan lezat, ada juga resep masakan yang bisa Anda coba sendiri dirumah." />
 <meta name="keyword" content="info kuliner, masakan unik, kreasi kuliner, sajian unik, kuliner lezat, masakan kreatif, kuliner unik" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+
 <link href="assets/stylesheet.css" rel="stylesheet" />
 
 <style>
@@ -19,8 +17,8 @@ box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; height: 350px; }
 .merah { background: #CE4E45; box-shadow: 4px 4px 13px #FF7F76; }
 .biru { background: linear-gradient(180deg, #51C1B6 90%, #48ADA3); box-shadow: 4px 4px 12px #80CBC4; }
 .ungu { background: linear-gradient(180deg, #9575CD 90%, #7C62AD); box-shadow: 4px 4px 12px #B39DDB; text-shadow: #333; }
-.judul h2 a { font-family: "Space Grotesk", "Roboto Condensed", Sans-Serif !important; color: #fff; }
-.konten { padding: 1rem 1rem 0; font-size: .9rem; overflow: auto; }
+.judul h2 a { color: #fff; }
+.konten { padding: 1rem 1rem 0; overflow: auto; }
 .readmore { height: 40px; padding: 0 2.5rem 1rem 0 ; text-align: right; }
 .kartu img { float: left; width: 80px; height: auto;
 margin: .3rem 1rem 1rem 0; }
@@ -34,7 +32,8 @@ margin: .3rem 1rem 1rem 0; }
 </head>
 <body>
 <div class="container" role="main">
-<div id="include-header"></div>
+<div id="include-header">
+</div>
 <script>
   fetch('header.html')
     .then(response => response.text())
@@ -42,6 +41,7 @@ margin: .3rem 1rem 1rem 0; }
       document.getElementById('include-header').innerHTML = data;
     });
 </script>
+
 <main>
 <section>
 <h1>Selamat datang!</h1>
@@ -185,7 +185,8 @@ Nah, jika Anda mengalami masalah serupa, jangan khawatir! Ada rahasia sederhana 
 </div>
 <section>
 <div>
-<div id="include-sidebar"></div>
+<div id="include-sidebar">
+</div>
 <script>
   fetch('sidebar.html')
     .then(response => response.text())
@@ -193,13 +194,15 @@ Nah, jika Anda mengalami masalah serupa, jangan khawatir! Ada rahasia sederhana 
       document.getElementById('include-sidebar').innerHTML = data;
     });
 </script>
+
 </div>
 </section>
 
 </div>
 
 </main>
-<div id="include-footer"></div>
+<div id="include-footer">
+</div>
 <script>
   fetch('footer.html')
     .then(response => response.text())
@@ -207,7 +210,6 @@ Nah, jika Anda mengalami masalah serupa, jangan khawatir! Ada rahasia sederhana 
       document.getElementById('include-footer').innerHTML = data;
     });
 </script>
-
 
 </div>
 </body>
