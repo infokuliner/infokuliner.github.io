@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
 <link href="assets/stylesheet.css" rel="stylesheet" />
+
 <style>
 /* Home Only */
 .kartu { border-radius: 20px; display: grid;
@@ -33,11 +34,14 @@ margin: .3rem 1rem 1rem 0; }
 </head>
 <body>
 <div class="container" role="main">
-<header>
-<img src="assets/images/infokuliner2.jpg" alt="Info Kuliner" />
-</header>
-<div class="menu">
-<a href="index.html">Home</a></div>
+<div id="include-header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
 <main>
 <section>
 <h1>Selamat datang!</h1>
@@ -45,7 +49,7 @@ margin: .3rem 1rem 1rem 0; }
 </section>  
 
 <div class="layout">
-<div class="utama">
+<div>
 <section>
 <div class="kolom">
 <div class="kartu">
@@ -180,7 +184,7 @@ Nah, jika Anda mengalami masalah serupa, jangan khawatir! Ada rahasia sederhana 
 </section>
 </div>
 <section>
-<div class="sidebar">
+<div>
 <div id="include-sidebar"></div>
 <script>
   fetch('sidebar.html')

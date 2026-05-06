@@ -1,0 +1,70 @@
+<!DOCTYPE html />
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="description" content="" />
+<meta name="keyword" content="" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+<link href="assets/stylesheet.css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="container" role="main">
+<div id="include-header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
+<main>
+<div class="layout">
+<div>
+<h1>Dapur Kita</h1>
+<div class="kotak">
+<div class="gbr">
+<img src="assets/images/dapur-01.jpg" alt="Gambar Desain Dapur Modern Minimalis" />
+</div>
+</div><p></p>
+<div class="kotak">
+<div class="gbr">
+<img src="assets/images/dapur-02.jpg" alt="Gambar Desain Dapur Minimalis Sederhana" />
+</div>
+</div><p></p>
+<div class="kotak">
+<div class="gbr">
+<img src="assets/images/dapur-03.jpg" alt="Gambar Desain Dapur Minimalis yang Disuka" />
+</div>
+</div>
+</div>
+<div>
+<div id="include-sidebar"></div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
+</main>
+
+<div id="include-footer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
+
+
+</div>
+</body>
+</html>

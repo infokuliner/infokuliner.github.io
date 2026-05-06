@@ -1,0 +1,66 @@
+<!DOCTYPE html />
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="description" content="" />
+<meta name="keyword" content="" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+<link href="assets/stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container" role="main">
+<div id="include-header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
+<main>
+<div class="layout">
+<div>
+<h1>Rekomendasi Peralatan Dapur Modern Produksi Lokal</h1>
+<p>Berikut adalah rekomendasi 5 brand peralatan dapur modern produksi lokal Indonesia. Pilihlah peralatan dapur yang sesuai untuk memenuhi kebutuhan Anda, dan hindari membeli peralatan dapur yang tidak berguna.</p>
+<div class="gbr-mskn"><img src="assets/images/peralatan-dapur.jpg" alt="Gambar Peralatan Dapur" /></div>
+<div class="kotak">
+<h3>1. Maspion</h3>
+<p>Brand legendaris asal Indonesia ini sudah sangat dikenal luas. Maspion menghadirkan berbagai peralatan dapur modern seperti panci stainless, rice cooker, hingga alat masak listrik. Keunggulannya terletak pada kualitasnya yang awet serta harga yang relatif terjangkau, sehingga cocok untuk kebutuhan rumah tangga sehari-hari.</p>
+<h3>2. Oxone</h3>
+<p>Oxone dikenal dengan desainnya yang elegan dan modern. Produknya mencakup alat masak set, oven listrik, blender, hingga peralatan kue dan roti. Brand ini sering menjadi pilihan bagi Anda yang ingin tampilan dapur lebih stylish tanpa mengesampingkan fungsi.</p>
+<h3>3. Miyako</h3>
+<p>Miyako merupakan salah satu brand lokal yang fokus pada peralatan dapur elektronik, seperti rice cooker, dispenser, dan kompor listrik. Produk-produknya terkenal hemat listrik, praktis, dan mudah digunakan, sehingga banyak diminati oleh keluarga Indonesia.</p>
+<h3>4. Cosmos</h3>
+<p>Cosmos menawarkan berbagai inovasi peralatan dapur modern seperti air fryer (sejenis alat masak modern dengan sedikit minyak), blender, dan magicom. Brand ini dikenal dengan teknologi yang terus berkembang serta fitur-fitur yang memudahkan aktivitas memasak di dapur.</p>
+<h3>5. Kirin</h3>
+<p>Kirin menghadirkan peralatan dapur yang praktis dan ekonomis, seperti kompor gas portable, rice cooker, dan alat pemanas air. Produk-produk Kirin cocok bagi Anda yang mencari solusi sederhana namun tetap fungsional.</p>
+</div><p></p>
+<p>👉 Memilih peralatan dapur brand lokal tidak hanya membantu memenuhi kebutuhan rumah tangga, tetapi juga turut mendukung industri dalam negeri. Selain itu, kualitas produk lokal saat ini semakin berkembang dan mampu bersaing dengan produk luar.</p>
+<p>Namun, menghindari barang mewah dan hidup dalam kesederhanaan masih sangat dianjurkan dalam ajaran Islam. Belilah seperlunya saja (yang tidak mewah) dengan alasan kualitas dan menghindari produk berkualitas rendah namun dengan harga yang sangat tinggi. Kita semua tahu bahwa kualitas yang bagus selalu berada di brand-brand terkenal dengan harga yang lebih tinggi.<br>Wallahu a'lam.</p>
+</div>
+<div>
+<div id="include-sidebar"></div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</main>
+<div id="include-footer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
+</div>
+</body>
+</html>
