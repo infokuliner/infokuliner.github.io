@@ -2,14 +2,17 @@
 *, *::before, *::after { box-sizing: border-box; }
 /* 2.2vw = 14px = 0.85rem */
 @font-face { font-family: 'CuteAurora';
-src: url('assets/CuteAurora.woff2'), url('CuteAurora.woff2') format('woff2'); font-display: swap; }
-@font-face { font-family: 'Satisfy';
-src: url('Satisfy-Regular.woff2') format('woff2'); font-display: swap; }
+src: url('CuteAurora.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Engagement';
+src: url('Engagement-Regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'LondrinaSolid';
+src: url('LondrinaSolid-Light.woff2') format('woff2'); font-display: swap; }
+
 html { font-size: 14px; scroll-behavior: smooth;
 -webkit-text-size-adjust: 100%; }
 
 body { width: 100%; margin: 0; padding: 0;
-font-family: "CuteAurora", "Open Sans", "Inter", -apple-system, "Noto Sans", Roboto, Sans-Serif;
+font-family: "CuteAurora", Sans-Serif;
 color: #2c3e50;
 line-height: 1.2; display: flex; flex-direction: column; min-height: 100vh; }
 
@@ -28,8 +31,8 @@ padding: .6rem .6rem; box-shadow: 0 5px 15px #FFB76F; }
 main { flex-grow: 1; padding: 1.5rem; }
 
 a { color: #2c3e50; text-decoration: none; }
-h1 { margin-top: 0; font-family: Satisfy, "Space Grotesk", "Open Sans", Arial; }
-h2, h3, h4 { margin-top: 0; font-family: "Space Grotesk", serif !important; }
+h1 { margin-top: 0; font-family: Engagement, serif; }
+h2, h3, h4 { margin-top: 0; font-family: "LondrinaSolid, serif !important; }
 h1, h2, h3 { font-weight: 550; }
 h4 { font-weight: 600; }
 h1 { font-size: 2.5rem; }
@@ -37,7 +40,7 @@ h2 { font-size: 1.5rem; }
 h3 { font-size: 1.3rem; }
 h4 { font-size: 1.15rem; }
 p { margin-top: 0; }
-.menu a, .links li a, .daftar li a, .footer-grid li a { font-family: "Trebuchet MS", Arial; font-size: .9rem; }
+.menu a, .links li a, .daftar li a, .footer-grid li a { font-family: "Space Grotesk", Arial; font-size: .9rem; }
 
 ul { margin-top: 0; margin-bottom: 1rem; padding-left: 1.25rem; }
 li { margin-bottom: 0.2rem; }
@@ -83,7 +86,7 @@ footer { background: #444; color: #eee;
 padding: 1rem 1.5rem .2rem 1.5rem;
 user-select: none; box-shadow: 0 -5px 15px rgba(68,68,68,.6); }
 footer a { color: #FFFF00; }
-footer .copyright { font-family: monospace; text-align: center; }
+footer .copyright { text-align: center; }
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
