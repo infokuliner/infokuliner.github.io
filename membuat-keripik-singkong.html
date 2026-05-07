@@ -6,26 +6,31 @@
 <title>Resep Membuat Keripik Singkong Renyah</title>
 <meta name="description" content="Informasi, tips-tips, dan resep membuat Keripik Singkong yang Renyah, yang bisa dicoba sendiri dirumah." />
 <meta name="keyword" content="keripik singkong, resep keripik singkong, merendam keripik singkong, keripik renyah" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
 <link href="assets/stylesheet.css" rel="stylesheet" />
+
+</style>
 </head>
 <body>
 <div class="container" role="main">
-<header>
-<img src="assets/images/infokuliner2.jpg" alt="Info Kuliner" />
-</header>
-<div class="menu">
-<a href="index.html">Home</a>
+<div id="include-header">
 </div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
 <main>
 
 <h1>
 Resep Keripik Singkong Original Renyah
 </h1>
-<div class="gbr-mskn"><img src="assets/images/keripik-singkong-2.jpg" alt="Gambar Keripik Singkong" /></div>
+<div class="layout">
+<div>
+<div class="gbr-mskn"><img src="assets/images/keripik-singkong.jpg" alt="Gambar Keripik Singkong" /></div>
 <p>Anda bisa membuat keripik singkong dengan cara di iris tipis dan langsung digoreng, namun hasilnya tidak selalu renyah. Untuk mendapatkan hasil yang renyah, lakukanlah beberapa cara berikut (jika tidak, nanti akan sulit renyah):</p>
+
 <div class="kotak">
 <h3>📌</h3>
 <ul>
@@ -33,12 +38,12 @@ Resep Keripik Singkong Original Renyah
 <li>Menggorengnya sedikit demi sedikit.</li>
 <li>Harus menggunakan minyak kemasan yang bagus, bukan curah atau campuran.</li>
 <li>Harus menggunakan wajan yang tebal.</li>
-</ul>
-</div>
-<p></p>
-<p>Berikut adalah langkah-langkah lengkap membuat keripik singkong yang renyah.</p>
+</ul></div>
+
 <div class="kolom">
 <div class="kotak">
+<h3>Berikut adalah langkah-langkah lengkap membuat keripik singkong yang renyah.</h3>
+
 <p><strong>Peralatan Penting:</strong></p>
 <ul>
 <li>Alat potong singkong (pengiris tipis).
@@ -73,9 +78,10 @@ Resep Keripik Singkong Original Renyah
 <p>Dengan cara diatas InsyaAllah keripik akan lebih renyah.</p>
 <p>📝 Namun perlu diingat, jika untuk dijual dalam jumlah banyak, mungkin cara ini kurang begitu disarankan, karena harus digoreng sedikit-sedikit biar renyah. Di akhir artikel, ada tips khusus untuk penjual.</p>
 </div>
-<div><h2>Resep Keripik Singkong Balado</h2>
-<div class="gbr-mskn"><img src="assets/images/keripik-singkong-balado.jpg" alt="Gambar Keripik Singkong Balado" /></div></div>
 <div class="kotak">
+<h2>Resep Keripik Singkong Balado</h2>
+<div class="gbr-mskn"><img src="assets/images/keripik-singkong-balado.jpg" alt="Gambar Keripik Singkong Balado" /></div>
+
 <p><strong>Bahan Utama:</strong></p>
 <ul>
 <li>Keripik singkong original yang sudah digoreng</li>
@@ -98,8 +104,12 @@ Resep Keripik Singkong Original Renyah
 <li>Campurkan Keripik: Matikan api, masukkan keripik singkong ke dalam wajan, aduk cepat hingga bumbu merata. Angkat dan biarkan dingin sebelum menyimpan.</li>
 </ol>
 </div>
+</div> <!--kolom-->
+<div class="kolom">
 <div class="kotak">
 <h3>Tips untuk Jualan</h3>
+<div class="gbr-mskn"><img src="assets/images/keripik-singkong-kemasan.jpg" alt="Gambar Keripik Singkong Dalam Toples" /></div>
+
 <ol>
 <li>Pilih Bahan Berkualitas: Gunakan singkong segar dan bebas cacat agar hasil keripik tidak pahit atau keras.
 ​</li>
@@ -114,7 +124,7 @@ Resep Keripik Singkong Original Renyah
 </ol>
 </div>
 <div class="kotak">
-<p>Berikut adalah bumbu varian rasa yang saya sebutkan pada no.4 diatas:</p>
+<h4>Berikut adalah bumbu varian rasa yang saya sebutkan pada no.4 diatas:</h4>
 <p><b>1. Rasa Keju:</b></p>
 <ul>
 <li>
@@ -145,22 +155,39 @@ Bubuk Keju Cheddar</li>
 <li>Gula Halus</li>
 </ul>
 </div>
-</div>
+</div> <!--kolom2-->
+
 <p></p>
 <div class="kolom">
 <div class="prev">
 <a href="panci-presto.html">◁◁ Sebelumnya:
-<h3>Panci Presto: Manfaat, Bahaya, dan Alternatifnya.</h3></a>
-	</div>
-    </div>
+<h3>Panci Presto: Manfaat, Bahaya, dan Alternatifnya.</h3></a></div>
+    <div></div>
+</div>
 <p></p>
+</div>
+<div>
+<div id="include-sidebar">
+</div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
 </main>
-<footer>
-<a href="https://kios-aneka.blogspot.com/" target="_blank">Secangkir Cerita & Fakta</a><br />
-<a href="https://www.facebook.com/profile.php?id=61550107204825" target="_blank">Follow me on Facebook</a><br />
-<br />
-<p class="copyright">&copy; infokuliner.github.io</p>
-</footer>
+<div id="include-footer">
+</div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
 </div>
 </body>
 </html>

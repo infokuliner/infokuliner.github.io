@@ -6,22 +6,24 @@
 <title>Membuat Salad Buah Creamy</title>
 <meta name="description" content="Rahasia Membuat Salad Buah Segar dan Creamy." />
 <meta name="keyword" content="salad buah, resep salad buah, salad buah creamy, cara membuat salad buah" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
 <link href="assets/stylesheet.css" rel="stylesheet" />
 </head>
 <body>
 <div class="container" role="main">
-<header>
-<img src="assets/images/infokuliner2.jpg" alt="Info Kuliner" />
-</header>
-<div class="menu">
-<a href="index.html">Home</a></div>
+<div id="include-header">
+</div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
 <main>
-<div class="layout">
-<div class="main">
+
 <h1>Rahasia Membuat Salad Buah Segar dan Creamy: Pilihan Saus dari yang Gurih hingga Sehat</h1>
+<div class="layout">
+<div>
 <p>Siapa yang bisa menolak segarnya semangkuk salad buah di sore hari yang panas? Di Indonesia, salad buah bukan sekadar hidangan penutup, tapi juga cemilan sehat yang mudah ditemui, baik di pedagang kaki lima maupun restoran berbintang.</p>
 <div class="gbr-mskn">
 <img src="assets/images/salad-buah-creamy.jpg" alt="Gambar Semangkuk Salad Buah Creamy" /></div>
@@ -90,9 +92,15 @@
 </div>
 <p></p>
 <p>Nah, sekarang giliran Anda bereksperimen di dapur. Saus mana yang jadi favorit Anda? Apakah tim klasik susu kental manis, atau tim sehat Greek yogurt? Selamat mencoba!</p>
+<div class="kolom">
+<div class="prev">
+<a href="membuat-keripik-singkong.html">◁◁ Sebelumnya:
+<h3>Membuat Keripik Singkong</h3></a>
+	</div>
+    </div>
 </div>
-<div class="sidebar">
 
+<div>
 <div id="include-sidebar"></div>
 <script>
   fetch('sidebar.html')

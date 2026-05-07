@@ -6,28 +6,28 @@
 <title>Rahasia Masak Ayam Berkuah Aroma Sedap!</title>
 <meta name="description" content="Informasi dan tips-tips memasak aneka ayam berkuah yang beraroma sedap." />
 <meta name="keyword" content="masakan ayam, masak ayam berkuah, masakan ayam sedap, masakan ayam tidak amis, masakan ayam tidak eneg, tips masak ayam" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
 <link href="assets/stylesheet.css" rel="stylesheet" />
-<style>
-.footer { margin-top: 2rem; }
-</style>
+
 </head>
 <body>
 <div class="container" role="main">
-<header>
-<img src="assets/images/infokuliner2.jpg" alt="Info Kuliner" />
-</header>
-<div class="menu">
-<a href="index.html">Home</a>
+<div id="include-header">
 </div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
 <main>
 
 <h1>
 Rahasia Masak Ayam Berkuah Aroma Sedap!
 </h1>
-<div class="gbr-mskn"><img src="assets/images/sup-ayam.jpeg" alt="Gambar Sup Ayam" /></div>
+<div class="layout">
+<div>
+<div class="gbr-mskn"><img src="assets/images/sup-ayam.jpg" alt="Gambar Sup Ayam" /></div>
 
 <p>Siapa yang tidak tergoda dengan semangkuk ayam berkuah hangat? Mulai dari soto ayam, opor, gulai, hingga sup ayam, hidangan ini selalu jadi andalan di meja makan. Namun, seringkali kita kecewa karena hasil masakan justru aromanya kurang tajam, beraroma aneh atau terasa terlalu berat.</p>
 <p>Nah, jika Anda mengalami masalah serupa, jangan khawatir! Ada rahasia sederhana yang bisa Anda coba. Tidak perlu bahan-bahan mahal, cukup terapkan langkah-langkah berikut ini.</p>
@@ -143,13 +143,29 @@ Rahasia Masak Ayam Berkuah Aroma Sedap!
 	</div>
     </div>
 <p></p>
+</div>
+<div>
+<div id="include-sidebar">
+</div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
 </main>
-<footer>
-<a href="https://kios-aneka.blogspot.com/" target="_blank">Secangkir Cerita & Fakta</a><br />
-<a href="https://www.facebook.com/profile.php?id=61550107204825" target="_blank">Follow me on Facebook</a><br />
-<br />
-<p class="copyright">&copy; infokuliner.github.io</p>
-</footer>
+<div id="include-footer">
+</div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
 </div>
 </body>
 </html>

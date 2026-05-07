@@ -6,29 +6,29 @@
 <title>Kreasi Sayur Asem</title>
 <meta name="description" content="Informasi dan tips-tips memasak sayur asem yang unik dan lezat, yang bisa dicoba dan dikembangkan sendiri dirumah." />
 <meta name="keyword" content="sayur asem, kreasi sayur asem, sayur asam unik, sayur kreatif, sayur asem tomato" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
 <link href="assets/stylesheet.css" rel="stylesheet" />
 </head>
 <body>
 <div class="container" role="main">
 
-<header>
-<img src="assets/images/infokuliner2.jpg" alt="Info Kuliner" />
-</header>
-
-<div class="menu">
-<a href="index.html">Home</a>
+<div id="include-header">
 </div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
 <main>
 
 <h1>
 Kreasi Sayur Asem
 </h1>
-<div class="gbr-mskn"><img src="assets/images/sayur-asam.jpg" alt="Gambar Sayur Asem" /></div>
+<div class="layout">
+<div>
 <p>Sayur asem biasanya dikenal sebagai masakan rumahan yang sederhana. Tapi sebenarnya, dengan sedikit kreativitas, sayur asem bisa dibuat lebih unik, segar, dan menarik tanpa menghilangkan cita rasa tradisionalnya.</p>
-
+<div class="gbr-mskn"><img src="assets/images/sayur-asam.jpg" alt="Gambar Sayur Asem" /></div>
 <div class="kotak"><h2>📌 Resep Sayur Asem Bening Green Tomato</h2>
 🛒 <b>Bahan-bahan:</b>
 <ul>
@@ -129,29 +129,45 @@ Kreasi Sayur Asem
 <h4>4. Masukkan Santan di Akhir</h4>
 <p>Masukkan coconut milk di akhir masakan sambil diaduk perlahan supaya tidak pecah.</p>
 <p>💡 <b>Menariknya:</b><br />Di beberapa daerah memang ada variasi sayur asem yang sedikit gurih seperti ini. Rasanya jadi perpaduan asam, gurih, dan segar.</p>
-</div>
-	<p></p>
+</div><p></p>
 <p>✅ <b>Tips tambahan:</b><br />Masukkan sayuran secara bertahap sesuai tingkat kerasnya. Sayur keras seperti corn dimasak dulu, baru sayuran lembut seperti long beans agar tidak terlalu lembek.</p>
 <p></p>
 <p>---</p>
 <p></p>
 <div class="garis-putus"></div>
 <p></p>
-<div class="kolom"></div>
+<div class="kolom">
+<div></div>
 <div class="prev next">
 <a href="masakan-ayam-sedap.html">Next ▷▷
-<h3>Rahasia Masak Ayam Berkuah Aroma Sedap!<h3></a>
-	</div>
+<h3>Rahasia Masak Ayam Berkuah Aroma Sedap!<h3></a></div>
+	
     </div>
 <p></p>
+</div>
+<div>
+<div id="include-sidebar">
+</div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
 </main>
 
-<footer>
-<a href="https://kios-aneka.blogspot.com/" target="_blank">Secangkir Cerita & Fakta</a><br />
-<a href="https://www.facebook.com/profile.php?id=61550107204825" target="_blank">Follow me on Facebook</a><br />
-<br />
-<p class="copyright">&copy; infokuliner.github.io</p>
-</footer>
+<div id="include-footer">
+</div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
 </div>
 </body>
 </html>

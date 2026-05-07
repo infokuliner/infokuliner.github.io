@@ -6,24 +6,26 @@
 <title>Informasi dan Tips-tips Seputar Kuliner</title>
 <meta name="description" content="Info singkat & tips-tips seputar kuliner dan masakan." />
 <meta name="keyword" content="info kuliner, info masak, jajan diluar, peluang usaha, kreasi masakan" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
 <link href="assets/stylesheet.css" rel="stylesheet" />
 </head>
 <body>
 <div class="container" role="main">
-<header>
-<img src="assets/images/infokuliner2.jpg" alt="Info Kuliner" />
-</header>
-<div class="menu">
-<a href="index.html">Home</a>
+<div id="include-header">
 </div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
 <main>
 
 <h1>
 Informasi dan Tips-tips Seputar Kuliner
 </h1>
+<div class="layout">
+<div>
 <div class="gbr-mskn"><img src="assets/images/info-kuliner.jpeg" alt="Gambar Makanan & Minuman" /></div>
 
 <div class="kotak"><h2>Berikut adalah info & tips-tips singkat seputar kuliner:</h2>
@@ -35,14 +37,29 @@ Informasi dan Tips-tips Seputar Kuliner
 <p>💵 Jika Anda mempunyai kemampuan lebih, dan kreasi masakan Anda disukai, maka hal ini bisa menjadi peluang untuk menjalankan usaha.</p>
 <p>🕌 Karunia Allah SwT. sangat luas, dan tidak melarang hamba-hamba-Nya mencari rezeki dan karunia-Nya. Namun jangan boros, dan jangan pelit kepada sesama yang tidak mampu.</p>
 </div>
-
+</div>
+<div>
+<div id="include-sidebar">
+</div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
 </main>
-<footer>
-<a href="https://kios-aneka.blogspot.com/" target="_blank">Secangkir Cerita & Fakta</a><br />
-<a href="https://www.facebook.com/profile.php?id=61550107204825" target="_blank">Follow me on Facebook</a><br />
-<br />
-<p class="copyright">&copy; infokuliner.github.io</p>
-</footer>
+<div id="include-footer">
+</div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
 </div>
 </body>
 </html>
