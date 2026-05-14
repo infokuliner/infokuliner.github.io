@@ -5,10 +5,10 @@ html { font-size: 14px; scroll-behavior: smooth;
 -webkit-text-size-adjust: 100%; }
 @font-face { font-family: 'CuteAurora';
 src: url('CuteAurora.woff2') format('woff2'); font-display: swap; }
-@font-face { font-family: 'Engagement';
-src: url('Engagement-Regular.woff2') format('woff2'); font-display: swap; }
-@font-face { font-family: 'LondrinaSolid';
-src: url('LondrinaSolid-Light.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Yellowtail';
+src: url('Yellowtail.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'RedRose';
+src: url('RedRose.woff2') format('woff2'); font-display: swap; }
 @font-face { font-family: 'SpaceGrotesk';
 src: url('SpaceGrotesk-SemiBold.woff2') format('woff2'); font-display: swap; }
 body { width: 100%; margin: 0; padding: 0;
@@ -31,15 +31,15 @@ padding: .6rem .6rem; box-shadow: 0 5px 15px #FFB76F; }
 main { flex-grow: 1; padding: 1.5rem; }
 
 a { color: #2c3e50; text-decoration: none; }
-h1 { margin: .5 0 .5rem 0; font-family: Engagement, serif; }
-h2, h3, h4 { margin-top: 0; font-family: LondrinaSolid, serif !important; }
-h1 { font-weight: 500; }
-h1, h2, h3, h4 { font-weight: 550; }
-h1 { font-size: 2.5rem; }
-h2 { font-size: 1.4rem; }
-h3 { font-size: 1.2rem; }
+h1 { margin: .5 0 .5rem 0; font-family: Yellowtail, serif; }
+h2, h3, h4, h5 { margin-top: 0; font-family: RedRose, serif !important; }
+h1 { font-weight: 550; }
+h1, h2, h3, h4 { font-weight: 550; margin-bottom: .5rem; }
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.3rem; }
 h4 { font-size: 1.1rem; }
-h5, h6 { font-size: 1rem; }
+h5, h6 { font-size: 1rem; font-weight: 600; margin-bottom: 5rem; }
 p { margin-top: 0; }
 .menu a, .footer-grid li a, .links li a, .daftar li a { font-family: SpaceGrotesk, "Trebuchet MS", Arial; }
 .menu a, .footer-grid li a { font-size: .9rem; }
@@ -53,7 +53,7 @@ li a { font-weight: 450; }
 
 .layout, .kolom { display:grid; grid-template-columns: 1fr; gap: 0 1.2rem; }
 
-.gbr-mskn, .gbr { margin: 1rem 0; }
+.gbr-mskn { margin: 2rem 0; }
 .gbr-mskn img, .gbr img { max-width: 100%; height: auto; display: block; border-radius: 10px;
 margin: 0 auto; }
 
@@ -69,7 +69,8 @@ box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; min-height: 250px; margin-
 .next { text-align: right; }
 .prev h3 { margin: 0; font-size: 1.1rem; }
 
-.pita, .atm { border-radius: 20px; display: grid;
+.pita, .atm { border-radius: 20px; display: grid; align-items: start; align-content: start; 
+/* justify-items: start; */
 box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .tips, .pin { background: #FFFBF7; }
 .icon { height: 2.5rem; padding: .5rem 1rem; font-size: 1.6rem; text-align: right; }
@@ -80,9 +81,9 @@ box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .pin-kuning h2, .pin-kuning h3 { color: #333; }
 .pin-biru { background: linear-gradient(180deg, #44A0CE 85%, #347A9E); }
 .judul2 { height: 40px; vertical-align: center; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); }
-.judul2 h2 { margin: .35rem 0 auto 1rem; }
-.judul2 h3 { margin: .55rem 0 auto 1rem; }
-.judul2 h4 { margin: .6rem 0 auto 1rem; }
+.judul2 h2 { margin: .35rem .5rem 0 1rem; }
+.judul2 h3 { margin: .55rem .5rem 0 1rem; }
+.judul2 h4 { margin: .4rem .5rem 0 1rem; }
 .konten2 { padding: 1rem; padding-bottom: 1rem; }
 
 /* Footer */
@@ -107,11 +108,11 @@ grid-template-columns: repeat(3, 1fr); }
 @media screen and (max-width: 768px) {
 html { font-size: 17px; }
 body { max-width: 100%; }
-h1 { font-size: 2rem; }
-h2 { font-size: 1.2rem; }
-h3 { font-size: 1.1rem; }
-h4 { font-size: 1rem; }
-h5, h6 { font-size: .9rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.1rem; }
+h5, h6 { font-size: 1rem; }
 .menu { padding-top: .3rem; }
 .menu a { font-size: .7rem; }
 .judul2 h2 { font-size: 1rem; }
@@ -131,4 +132,7 @@ body { color: #ccc; }
 a { color: #FF3331; }
 .prev { border: 1.5px solid #333; }
 .garis-putus { border-top: 3px dashed #aaa; }
+.pin-kuning h2, .pin-kuning h3 { color: #eee; }
+.daftar li { border-bottom: 1px dashed #555; }
+.prev a { color: #FFFF00; }
 }
