@@ -9,12 +9,16 @@ src: url('CuteAurora.woff2') format('woff2'); font-display: swap; }
 src: url('Yellowtail.woff2') format('woff2'); font-display: swap; }
 @font-face { font-family: 'RedRose';
 src: url('RedRose.woff2') format('woff2'); font-display: swap; }
-@font-face { font-family: 'SpaceGrotesk';
-src: url('SpaceGrotesk-SemiBold.woff2') format('woff2'); font-display: swap; }
+/* @font-face { font-family: 'SpaceGrotesk';
+src: url('SpaceGrotesk-SemiBold.woff2') format('woff2'); font-display: swap; } */
+:root { --font: "Inter", "Open Sans", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+--font2: "Time New Roman", Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+--smooth: -webkit-font-smoothing: antialiased;
+}
 body { width: 100%; margin: 0; padding: 0;
-font-family: "CuteAurora", Sans-Serif;
+font-family: "CuteAurora", var(--font); var(--smooth);
 color: #2c3e50;
-line-height: 1.2; display: flex; flex-direction: column; min-height: 100vh; }
+line-height: 1.2; display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; }
 
 /* Container utama */
 .container { flex-grow: 1; display: flex;
@@ -23,26 +27,32 @@ background: #FFF7EE; }
 
 /* Header */
 header, header img { display: block; width: 100%; height: auto; }
-.menu { background: linear-gradient(180deg, #F2AF6D, #F27D00); height: 35px; z-index: 3;
-padding: .6rem .6rem; box-shadow: 0 5px 15px #FFB76F; }
-.menu a { color: #fff; border-right: 1px solid #fff; padding: 0 1rem 0 .5rem; }
+.menu { background: linear-gradient(180deg, #F2AF6D, #F27D00); height: 37px; z-index: 3;
+box-shadow: 0 5px 15px #FFB76F; align-content: center; }
+
+.menu ul { display: flex; flex-direction: row; list-style: none; }
+.menu li { padding: .4rem 1rem; border-left: 1px solid #fff; }
+.menu li:hover { background: #aa6622; }
+.menu li:last-child { border-right: 1px solid #fff; }
+.menu a { color: #fff; }
 
  /* Konten utama */
 main { flex-grow: 1; padding: 1.5rem; }
 
 a { color: #2c3e50; text-decoration: none; }
-h1 { margin: .5 0 .5rem 0; font-family: Yellowtail, serif; }
-h2, h3, h4, h5 { margin-top: 0; font-family: RedRose, serif !important; }
+h1 { margin: .5 0 .5rem 0; font-family: Yellowtail, var(--font2); var(--smooth); }
+h2, h3, h4, h5 { margin-top: 0; font-family: RedRose, var(--font2) !important; var(--smooth); }
 h1 { font-weight: 550; }
 h1, h2, h3, h4 { font-weight: 550; margin-bottom: .5rem; }
-h1 { font-size: 1.8rem; }
+h1 { font-size: 1.7rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.3rem; }
 h4 { font-size: 1.1rem; }
-h5, h6 { font-size: 1rem; font-weight: 600; margin-bottom: 5rem; }
+h5, h6 { font-size: 1rem; font-weight: 600; margin-bottom: .5rem; }
+b, strong { font-weight: 600; }
 p { margin-top: 0; }
-.menu a, .footer-grid li a, .links li a, .daftar li a { font-family: SpaceGrotesk, "Trebuchet MS", Arial; }
-.menu a, .footer-grid li a { font-size: .9rem; }
+.menu a, .footer-grid li a, .links li a, .daftar li a { font-family: RedRose, "Trebuchet MS", var(--font); var(--smooth); }
+.menu a, .footer-grid li a { font-size: 1rem; }
 .daftar li { border-bottom: 1.2px solid #FFE0B2; padding: .5rem 0; }
 .daftar li a { font-size: 1.2rem; }
 .links li a { font-size: 1.1rem; }
@@ -57,14 +67,9 @@ li a { font-weight: 450; }
 .gbr-mskn img, .gbr img { max-width: 100%; height: auto; display: block; border-radius: 10px;
 margin: 0 auto; }
 
-@media (min-width: 860px){
-.layout { grid-template-columns: 1.5fr .5fr; }
-.kolom { grid-template-columns: 1fr 1fr; }
- }
- 
 .kotak { padding: 1rem; border-radius:20px;
 box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; min-height: 250px; margin-bottom: 1.2rem; }
-.garis-putus { border-top: 3px dashed #FFE0B2; margin-bottom: 2rem; }
+.garis-putus { border-top: 3px dashed #FFE0B2; margin: 1rem 0 2rem; }
 .prev { background: #FFF3E0; padding: .6rem; border-radius: 15px; border: 1.5px solid #FFD9BC; margin-bottom: 1rem; }
 .next { text-align: right; }
 .prev h3 { margin: 0; font-size: 1.1rem; }
@@ -80,28 +85,32 @@ box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .pin-kuning { background: linear-gradient(180deg, #E8E800 85%, #A8A800); }
 .pin-kuning h2, .pin-kuning h3 { color: #333; }
 .pin-biru { background: linear-gradient(180deg, #44A0CE 85%, #347A9E); }
-.judul2 { height: 40px; vertical-align: center; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); }
-.judul2 h2 { margin: .35rem .5rem 0 1rem; }
-.judul2 h3 { margin: .55rem .5rem 0 1rem; }
-.judul2 h4 { margin: .4rem .5rem 0 1rem; }
+.judul2 { height: 40px; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); align-content: center; padding: .5rem 1rem 0 1rem; overflow-x: auto; white-space: nowrap; scroll-snap-type: x mandatory; }
 .konten2 { padding: 1rem; padding-bottom: 1rem; }
+
+@media (min-width: 860px){
+.layout { grid-template-columns: 1.5fr .5fr; }
+.kolom { grid-template-columns: 1fr 1fr; }
+.menu { height: 40px; }
+.gbr-mskn img, .gbr img { max-width: 65%; }
+.daftar li a { font-size: 1rem; }
+.menu li { padding: .7rem 1rem; }
+}
 
 /* Footer */
 footer { background: #444; color: #eee;
-padding: 1rem 1.5rem .2rem 1.5rem;
+padding: 1rem .5rem .5rem;
 user-select: none; box-shadow: 0 -5px 15px rgba(68,68,68,.6); }
 footer a { color: #FFFF00; }
 footer .copyright { text-align: center; }
+.footer-grid { display: grid;
+grid-template-columns: repeat(3, 1fr); }
+
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-}
-.footer-grid { display: grid;
-grid-template-columns: repeat(3, 1fr); }
-@media (min-width: 1024px){
-.menu { height: 40px; padding-top: .8rem; }
-.gbr-mskn img, .gbr img { max-width: 65%; }
 }
 
 /* Mobile */
@@ -113,13 +122,12 @@ h2 { font-size: 1.3rem; }
 h3 { font-size: 1.2rem; }
 h4 { font-size: 1.1rem; }
 h5, h6 { font-size: 1rem; }
-.menu { padding-top: .3rem; }
-.menu a { font-size: .7rem; }
+.menu a { font-size: .8rem; }
 .judul2 h2 { font-size: 1rem; }
 .judul2 h3 { font-size: .9rem; }
 .daftar li a { font-size: 1rem; }
 .links li a { font-size: .9rem; }
-footer, .footer-grid li a, #include-sidebar .konten2 { font-size: .7rem; }
+footer, .footer-grid li a, #include-sidebar .konten2 { font-size: .8rem; }
 }
 
 /* Dark Mode */
@@ -127,6 +135,7 @@ footer, .footer-grid li a, #include-sidebar .konten2 { font-size: .7rem; }
 body { color: #ccc; }
 .container { background: #121212; }
 .menu { background: linear-gradient(180deg, #333, #222); box-shadow: none; }
+.menu li:hover { background: #DD0000; }
 .kotak, .pita, .atm, footer, .prev { background: #212021; box-shadow: none; }
 .judul2 { background: #343434; box-shadow: 4px 4px 12px #222; }
 a { color: #FF3331; }
