@@ -7,6 +7,7 @@
 <meta name="description" content="Desain dapur masa kini, modern dan mininalis yang banyak disuka." />
 <meta name="keyword" content="desain dapur, dapur mininalis, dapur modern, dapur sederhana, gambar dapur masa kini, dapur cantik" />
 <link href="assets/stylesheet.css" rel="stylesheet" />
+
 </head>
 <body>
 <div class="container" role="main">
@@ -21,23 +22,32 @@
 <main>
 
 <h1>Dapur Kita</h1>
+<p>Desain dapur masa kini yang minimalis, namun modern dan elegan.</p>
 <div class="layout">
 <div>
 <div class="kotak">
 <div class="gbr">
-<img src="assets/images/dapur-01.jpg" alt="Gambar Desain Dapur Modern Minimalis" />
+<img data-src="assets/images/dapur-01.jpg" alt="Gambar Desain Dapur Modern Minimalis" class="lazy" />
 </div>
-</div><p></p>
+</div>
 <div class="kotak">
 <div class="gbr">
-<img src="assets/images/dapur-02.jpg" alt="Gambar Desain Dapur Minimalis Cantik dan Sederhana" />
+<img data-src="assets/images/dapur-02.jpg" alt="Gambar Desain Dapur Minimalis Cantik dan Sederhana" class="lazy" />
 </div>
-</div><p></p>
+</div>
 <div class="kotak">
 <div class="gbr">
-<img src="assets/images/dapur-03.jpg" alt="Gambar Desain Dapur Minimalis yang Disuka" />
+<img data-src="assets/images/dapur-03.jpg" alt="Gambar Desain Dapur Minimalis yang banyak disuka" class="lazy" />
 </div>
 </div>
+<div class="kotak">
+<div class="gbr"><img data-src="assets/images/dapur-04.jpg" alt="Desain Dapur Minimalis modern favorit semua" class="lazy" /></div>
+</div>
+
+<div class="kotak">
+<div class="gbr"><img data-src="assets/images/dapur-05.jpg" alt="Desain Dapur cantik santai namun hangat" class="lazy" /></div>
+</div>
+
 </div>
 <div>
 <div id="include-sidebar"></div>
@@ -60,8 +70,26 @@
       document.getElementById('include-footer').innerHTML = data;
     });
 </script>
-
-
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll("img.lazy");
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;   // load gambar
+        img.classList.remove("lazy");
+        obs.unobserve(img);          // stop observe setelah dimuat
+      }
+    });
+  });
+
+  images.forEach(img => observer.observe(img));
+});
+</script>
+
 </body>
 </html>
