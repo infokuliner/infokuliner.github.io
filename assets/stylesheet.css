@@ -12,7 +12,7 @@ src: url('RedRose.woff2') format('woff2'); font-display: swap; }
 /* @font-face { font-family: 'SpaceGrotesk';
 src: url('SpaceGrotesk-SemiBold.woff2') format('woff2'); font-display: swap; } */
 :root { --font: "Inter", "Open Sans", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
---font2: "Time New Roman", Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+--font2: Georgia, "Times New Roman", Times, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 --smooth: -webkit-font-smoothing: antialiased;
 }
 body { width: 100%; margin: 0; padding: 0;
@@ -65,8 +65,7 @@ li a { font-weight: 450; }
 .layout, .kolom { display:grid; grid-template-columns: 1fr; gap: 0 1.2rem; }
 
 .gbr-mskn { margin: 2rem 0; }
-.gbr-mskn img, .gbr img { max-width: 100%; height: auto; display: block; border-radius: 10px;
-margin: 0 auto; }
+.gbr-mskn img, .gbr img { max-width: 100%; height: auto; display: block; border-radius: 10px; margin: 0 auto; }
 
 .kotak { padding: 1rem; border-radius:20px;
 box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; min-height: 250px; margin-bottom: 1.2rem; }
@@ -88,6 +87,9 @@ box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .pin-biru { background: linear-gradient(180deg, #44A0CE 85%, #347A9E); }
 .judul2 { height: 40px; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); align-content: center; padding: .5rem 1rem 0 1rem; overflow-x: auto; white-space: nowrap; scroll-snap-type: x mandatory; }
 .konten2 { padding: 1rem; padding-bottom: 1rem; }
+
+blockquote { font-style: italic; color: #444;
+border-left: 4px solid #F27D00; padding: 0.75rem .5rem; margin: 1rem 0 1rem 2rem; background: #FFF5E3; }
 
 @media (min-width: 860px){
 .layout { grid-template-columns: 1.5fr .5fr; }
