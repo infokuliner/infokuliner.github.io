@@ -11,24 +11,30 @@
 /* Home Only */
 .kartu { border-radius: 20px; display: grid;
 box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; height: 350px; margin-bottom: 1.2rem; }
-.judul { height: 55px; padding: .9rem .5rem 0 1rem; border-radius: 20px 20px 10px 10px; }
+.judul { height: 55px; border-radius: 20px 20px 10px 10px; overflow-x: auto; align-content: center; padding: .5rem 1rem 0 1rem; white-space: nowrap; scroll-snap-type: x mandatory; }
+.judul h2 a { font-size: 1.1rem; color: #fff; }
+.abu h2 a { color: #333; }
 .merah { background: #CE4E45; box-shadow: 4px 4px 13px #FF7F76; }
 .biru { background: linear-gradient(180deg, #51C1B6 90%, #48ADA3); box-shadow: 4px 4px 12px #80CBC4; }
 .ungu { background: linear-gradient(180deg, #9575CD 90%, #7C62AD); box-shadow: 4px 4px 12px #B39DDB; text-shadow: #333; }
 .abu { background: #C0C8D8; box-shadow: 4px 4px 13px #C5D6F7; }
 .cokmud { background: #C6B162; box-shadow: 4px 4px 13px #FFE178; }
-.judul h2 a { font-size: 1.1rem; color: #fff; }
-.abu h2 a { color: #333; }
+
 .konten { font-size: .9rem; padding: 1rem 1rem 0; overflow: auto; }
 .konten img { border-radius: 7px; }
 .readmore { height: 40px; padding: .5rem 2.5rem 1rem 0 ; text-align: right; }
 .kartu img { float: left; width: 200px; height: auto;
 margin: .3rem 1.5rem 1rem 0; }
 
+@media (min-width: 860px){
+.judul { font-size: 15px; }
+}
+
 /* Dark Mode - Home Only */
 @media (prefers-color-scheme: dark) {
 .kartu { background: #212021; box-shadow: none; }
 .judul { background: #343434; box-shadow: 4px 4px 12px #222; }
+.abu h2 a { color: #eee; }
 }
 </style>
 </head>
@@ -48,15 +54,13 @@ margin: .3rem 1.5rem 1rem 0; }
 
 <h1>Selamat datang!</h1>
 <p>Situs ini menyajikan tips-tips, resep masakan, jajanan, minuman, dan info seputar kuliner yang unik dan lezat.</p>     
-  
-
 <div class="layout">
 <div>
 
 <div class="kolom">
 <div class="kartu">
 		<div class="judul abu">
-<h2><a href="kerang-hijau-bumbu-kuning.html">Resep Kerang Hijau Bumbu Kuning Sedap</a></h2>
+<h2><a href="kerang-hijau-bumbu-kuning.html">Resep Kerang Hijau Bumbu Kuning Sedap, Masakan Seafood Populer</a></h2>
 		</div>
         <div class="konten">
 <img src="assets/images/gambar-masakan-kuah-kuning-250.jpg" alt="Gambar Masakan Kuah Kuning" />
@@ -159,10 +163,7 @@ Nah, jika Anda mengalami masalah serupa, jangan khawatir! Ada rahasia sederhana 
 		</div>
 	</div>    
 </div>
-
-<p></p><br />
 <div class="garis-putus"></div>
-
 <h2>Mengenal Nasi Timbal Sunda dan Lalapan: Perpaduan Sederhana yang Istimewa</h2>
 
 <div class="gbr-mskn"><img src="assets/images/nasi-timbal.jpg" /></div>
