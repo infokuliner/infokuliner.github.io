@@ -70,13 +70,13 @@ li a { font-weight: 450; }
 .gbr-mskn img, .gbr img { max-width: 100%; height: auto; display: block; border-radius: 10px; margin: 0 auto; }
 
 .kotak { padding: 1rem; border-radius:20px;
-box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; min-height: 250px; margin-bottom: 1.2rem; }
+box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; min-height: 250px; margin-bottom: 1.2rem; align-items: start; align-content: start; }
 .garis-putus { border-top: 3px dashed #FFE0B2; margin: 1rem 0 2rem; }
 .prev { background: #FFF3E0; padding: .6rem; border-radius: 15px; border: 1.5px solid #FFD9BC; margin-bottom: 1rem; }
 .next { text-align: right; }
 .prev h3 { margin: 0; font-size: 1.1rem; }
 
-.pita, .atm { border-radius: 20px; display: grid; align-items: start; align-content: start; 
+.pita, .atm { border-radius: 20px; display: grid;
 /* justify-items: start; */
 box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .tips, .pin { background: #FFFBF7; }
@@ -89,7 +89,7 @@ box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .pin-biru { background: linear-gradient(180deg, #44A0CE 85%, #347A9E); }
 .pin-oren { background: linear-gradient(180deg, #F28D29 85%, #C46200); }
 .judul2 { height: 40px; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); align-content: center; padding: .5rem 1rem 0 1rem; overflow-x: auto; white-space: nowrap; scroll-snap-type: x mandatory; }
-.konten2 { padding: 1rem; padding-bottom: 1rem; }
+.konten2 { padding: 1rem; padding-bottom: 1rem; align-items: start; align-content: start; }
 
 blockquote { color: #333;
 border-left: 4px solid #F27D00; border-right: 4px solid #F27D00; padding: 0.75rem .5rem; 
@@ -142,6 +142,8 @@ footer, .footer-grid li a, #include-sidebar .konten2 { font-size: .8rem; }
 body { color: #ccc; }
 .container { background: #121212; }
 .menu { background: linear-gradient(180deg, #333, #222); box-shadow: none; }
+.menu li { border-left: 1px solid #555; }
+.menu li:last-child { border-right: 1px solid #555; }
 .menu li a:hover { background: #DD0000; }
 .kotak, .pita, .atm, footer, .prev { background: #212021; box-shadow: none; }
 .judul2 { background: #343434; box-shadow: 4px 4px 12px #222; }
