@@ -1,0 +1,70 @@
+<!DOCTYPE html />
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="description" content="" />
+<meta name="keyword" content="" />
+<link href="assets/stylesheet.css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="container" role="main">
+<div id="include-header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
+<main>
+
+<h1>Disclaimer</h1>
+<div class="layout">
+<div>
+<p>Informasi, resep, dan tips yang disajikan di Infokuliner.github.io adalah untuk tujuan hiburan dan pengetahuan umum semata. Kami bukan ahli gizi, dokter, atau profesional kesehatan.</p>
+<p>Setiap individu memiliki kondisi kesehatan, alergi, dan toleransi yang berbeda-beda. Selalu konsultasikan dengan dokter atau ahli gizi sebelum mengubah pola makan Anda, terutama jika Anda memiliki kondisi kesehatan khusus (seperti diabetes, hipertensi, alergi makanan, atau penyakit lainnya).</p>
+<p>Keakuratan informasi nutrisi (jika diberikan) dapat bervariasi tergantung bahan, merek, dan metode pengukuran. Kami tidak menjamin keakuratannya secara mutlak.</p>
+<p>Hasil masakan dapat berbeda tergantung keterampilan, peralatan, dan bahan yang digunakan.</p>
+<p>Kami tidak bertanggung jawab atas segala konsekuensi (seperti keracunan makanan, reaksi alergi, atau masalah kesehatan) yang timbul dari penerapan informasi di website ini.</p>
+<p>Dengan mengakses dan menggunakan konten kami, Anda menyetujui bahwa Anda bertanggung jawab penuh atas keputusan dan tindakan Anda terkait makanan dan kesehatan.</p>
+<h3>Ulasan &amp; Rekomendasi</h3>
+<p>Semua ulasan makanan, masakan, rumah makan, restoran dan produk kuliner di Infokuliner.github.io adalah pendapat subjektif penulis.</p>
+<p>Harga, menu, kualitas, dan layanan dapat berubah kapan saja tanpa pemberitahuan sebelumnya. Kami sangat menyarankan Anda untuk menghubungi restoran langsung atau memeriksa sumber terbaru sebelum berkunjung.</p>
+<p>Setiap orang memiliki selera dan preferensi yang berbeda. Apa yang kami sukai mungkin tidak sesuai dengan selera Anda, dan sebaliknya.</p>
+<p>Kami tidak bertanggung jawab atas kekecewaan, masalah layanan, atau perubahan yang terjadi setelah review kami diterbitkan.</p>
+<h3>Keamanan Pangan &amp; Anak-anak</h3>
+<p>Resep yang melibatkan proses tertentu (seperti fermentasi, pengasapan, atau pengolahan daging/ikan mentah) memiliki resiko keamanan pangan jika tidak dilakukan dengan benar. Lakukan dengan pengetahuan yang memadai dan higiene yang ketat.</p>
+<p>Resep yang melibatkan alat atau metode beresiko (pisau, kompor, deep fryer, dll.), perhatikan keselamatan, terutama jika melibatkan anak-anak. Pengawasan orang dewasa sangat diperlukan.</p>
+<p>Beberapa bahan mungkin beresiko bagi kelompok tertentu (misalnya, madu untuk bayi di bawah 1 tahun, makanan kecil beresiko tersedak).</p>
+<p>Infokuliner.github.io dan penulisnya tidak bertanggung jawab atas cedera, keracunan, atau kerugian akibat mengikuti resep atau tips.</p>
+<p>Namun kami menjamin bahwa informasi dan resep di Infokuliner.github.io telah dipertimbangkan sebelumnya, dan meniadakan bahan-bahan yang haram.</p>
+</div>
+<div>
+<div id="include-sidebar"></div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
+</main>
+
+<div id="include-footer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
+
+
+</div>
+</body>
+</html>
