@@ -81,7 +81,7 @@ box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; min-height: 250px; margin-
 /* justify-items: start; */
 box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .tips, .pin { background: #FFFBF7; }
-.icon { height: 2.5rem; padding: .5rem 1rem; font-size: 1.6rem; text-align: right; }
+.icon { height: 2.5rem; padding: .5rem 1rem; font-size: 1.2rem; text-align: right; }
 .tips-hijau { background: linear-gradient(180deg, #51C16F 85%, #409957); }
 .pin-biru h2, .pin-biru h3 { color: #fff; }
 .tips-hijau h2, .tips-hijau h3 { color: #fff; }
@@ -89,8 +89,11 @@ box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .pin-kuning h2, .pin-kuning h3 { color: #333; }
 .pin-biru { background: linear-gradient(180deg, #44A0CE 85%, #347A9E); }
 .pin-oren { background: linear-gradient(180deg, #F29D49 85%, #C46200); }
-.judul2 { height: 40px; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); align-content: center; padding: .5rem 1rem 0 1rem; overflow-x: auto; white-space: nowrap; scroll-snap-type: x mandatory; }
+.judul2 { height: 40px; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); 
+align-content: center;
+padding: .3rem 1rem 0; overflow-x: auto; white-space: nowrap; scroll-snap-type: x mandatory; }
 .konten2 { padding: 1rem; padding-bottom: 1rem; align-items: start; align-content: start; }
+.resep { border-top: 2.5px dashed #F27D00; border-bottom: 2.5px dashed #F27D00; background: #FFF5E3; color: #333; box-shadow: none; } 
 
 blockquote { color: #333;
 border-left: 4px solid #F27D00; border-right: 4px solid #F27D00; padding: 0.75rem .5rem; 
@@ -160,5 +163,6 @@ a { color: #F27D00; }
 .daftar li:hover { background: #333; }
 .prev a { color: #FFFF00; }
 blockquote { background: #222121; color: #ccc; }
+.resep { background: #343434; color: #eee; border: 0; } 
 
 }
