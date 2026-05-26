@@ -79,7 +79,9 @@ min-height: 250px; margin-bottom: 1.2rem; align-items: start; align-content: sta
 /* justify-items: start; */
 box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .icon { background: #FFFBF7; border-radius: 20px 20px 0 0; height: 2.5rem; padding: .5rem 1rem; font-size: 1.2rem; text-align: right; }
-
+.judul2 { height: 40px; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); 
+align-content: center;
+padding: .3rem 1rem 0; overflow-x: auto; white-space: nowrap; scroll-snap-type: x mandatory; }
 .tips-hijau { background: linear-gradient(180deg, #51C16F 85%, #409957); }
 .pin-biru h2, .pin-biru h3 { color: #fff; }
 .tips-hijau h2, .tips-hijau h3 { color: #fff; }
@@ -87,16 +89,13 @@ box-shadow: 2px 2px 6px #FFECB3; min-height: 250px; margin-bottom: 1.2rem; }
 .pin-kuning h2, .pin-kuning h3 { color: #333; }
 .pin-biru { background: linear-gradient(180deg, #44A0CE 85%, #347A9E); }
 .pin-oren { background: linear-gradient(180deg, #F29D49 85%, #C46200); }
-.judul2 { height: 40px; color: #eee; box-shadow: 4px 4px 12px rgba(23,71,0,.3); 
-align-content: center;
-padding: .3rem 1rem 0; overflow-x: auto; white-space: nowrap; scroll-snap-type: x mandatory; }
 .konten2 { padding: 1rem; padding-bottom: 1rem; align-items: start; align-content: start; }
 .konten3 { background: #FFFBF7; border-radius: 0 0 20px 20px; padding: 1rem; }
 .resep { height: 57px;
-//background: #EFDAD5;
-background: #FFFBF7; border-bottom: 2px solid #EDCAC5;
-color: #333; box-shadow: none; overflow-x: auto; white-space: nowrap; scroll-snap-type: x mandatory; }
+background: #FFFBF7; border-bottom: 2px solid #EDCAC5; white-space: wrap;
+color: #333; box-shadow: none; }
 .resep h2 { font-size: 1.2rem !important; }
+.profil { font-size: .8rem; }
 
 .kotak, .tips, .pin { background: repeating-linear-gradient(to bottom,#FFFBF7,#FFFBF7 33px,#EDCAC5 34px,#FFFBF7 35px);
 box-shadow: 2px 2px 6px #FFECB3; }
@@ -129,10 +128,12 @@ header { min-height: 300px; background-position: center bottom; }
 .menu { height: 40px; }
 .menu li a { height: 40px; padding: 0 1rem; }
 .gbr-mskn img, .gbr img { max-width: 65%; }
-blockquote { max-width: 70ch; border-radius: 9px; }
+blockquote { max-width: 90ch; border-radius: 9px; }
 .judul2 h2 { font-size: 1.2rem; }
 .daftar li a { font-size: 1rem; }
 .grs-pts { display: none; }
+.konten2, .kotak-inner, .text { max-width: 90ch; }
+.resep { height: 65px; }
 }
 
 /* Mobile */
