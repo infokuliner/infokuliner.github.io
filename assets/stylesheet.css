@@ -169,17 +169,18 @@ body { color: #ccc; }
 .menu { background: linear-gradient(180deg, #333, #222); box-shadow: none; }
 .menu li { border-right: 1px solid #777; }
 .menu li a:hover { background: #F27D00 !important; }
-.kotak, .pita, .atm, footer, .prev { background: #212021; box-shadow: none; }
+.kotak, .pita, .atm, .kertas, footer, .prev { background: #212021; box-shadow: none; }
 .judul2 { background: #343434; box-shadow: 4px 4px 12px #222; }
 a { color: #F27D00; }
 .prev { border: 1.5px solid #333; }
 .garis-putus { border-top: 3px dashed #aaa; }
 .pin-kuning h2, .pin-kuning h3 { color: #eee; }
-.daftar li { border-bottom: 1px dashed #555; }
-.daftar li:hover { background: #333; }
+.daftar li, #link-cat li { border-bottom: 1px dashed #555; }
+.daftar li:hover, #link-cat li:hover { background: #333; }
 .prev a { color: #FFFF00; }
 blockquote { background: #222121; color: #ccc; }
 .resep { height: 45px; background: #343434; color: #eee; border: 0; }
-.konten3, .icon { background: #212021; }
+.konten3, .icon, .konten2 { background: #212021; }
+.nomor a { background: #F27D00; }
 
 }
