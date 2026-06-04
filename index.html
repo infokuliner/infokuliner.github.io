@@ -13,17 +13,19 @@
 box-shadow: 2px 2px 6px #FFECB3; background: #FFFBF7; height: 350px; margin-bottom: 1.2rem; }
 .judul { height: 55px; border-radius: 20px 20px 10px 10px; overflow-x: auto; align-content: center; padding: .5rem 1rem 0 1rem; white-space: nowrap; scroll-snap-type: x mandatory; }
 .judul h2 a { font-size: 1.1rem; color: #fff; }
-.abu h2 a { color: #333; }
+.abu h2 a { color: #000; }
 .merah { background: #CE4E45; box-shadow: 4px 4px 13px #FF7F76; }
 .biru { background: linear-gradient(180deg, #51C1B6 90%, #48ADA3); box-shadow: 4px 4px 12px #80CBC4; }
 .ungu { background: linear-gradient(180deg, #9575CD 90%, #7C62AD); box-shadow: 4px 4px 12px #B39DDB; text-shadow: #333; }
 .abu { background: #C0C8D8; box-shadow: 4px 4px 13px #C5D6F7; }
 .cokmud { background: #C6B162; box-shadow: 4px 4px 13px #FFE178; }
+.coklat { background: linear-gradient(180deg, #A2898F 90%, #8D6E63); box-shadow: 3px 3px 11px #8D6E63; z-index: 5; }
 
 .konten { font-size: .9rem; padding: 1rem 1rem 0; overflow: auto; align-items: start; }
-.konten img { float: left; width: 200px; height: auto;
+.konten img { float: left; width: 200px; height: auto; border: 0;
 margin: .3rem 1.5rem 1rem 0; border-radius: 7px; }
-.readmore { height: 40px; padding: .5rem 2.5rem 1rem 0 ; text-align: right; }
+.readmore { height: 40px; padding: .5rem 2.5rem 1rem 0 ; text-align: right; border-radius: 0 0 20px 20px; }
+.populer { background: #FFEDC4; }
 
 @media (min-width: 860px){
 .kartu { height: 300px; }
@@ -61,12 +63,29 @@ margin: .3rem 1.5rem 1rem 0; border-radius: 7px; }
 
 <div class="kolom">
 
+<div class="kartu">
+	<div class="judul coklat">
+<h2><a href="nasgor-mawut.html">⭐ Populer | Resep Nasi Goreng Mawut</a></h2>
+	</div>
+    <div class="konten populer">
+<a href="assets/images/nasgor-mawut.webp" target="_blank"><img src="assets/images/nasgor-mawut-250.webp" alt="Gambar Tahu Premium Berprotein dan Berasa" /></a>
+<h3>Resep Nasi Goreng Mawut (Magelangan) Komplit: Ayam, Bakso, Sosis – Kenyang dan Nagih!</h3>
+<p>Pernahkah Anda merasa bingung saat ingin sarapan atau makan malam, harus memilih antara nasi goreng atau mie goreng? Rasanya kedua-duanya menggoda. Jika Anda pernah mengalami dilema ini, ada satu solusi kuliner yang legendaris dari tanah Jawa: Nasi Goreng Mawut, atau yang sering disebut Magelangan.
+</p>
+<p>
+Sesuai namanya, "mawut" dalam bahasa Jawa berarti campur aduk atau tumpah melimpah. Namun, di dunia kuliner, istilah ini justru merepresentasikan keharmonisan rasa yang sempurna...</p>
+	</div>
+	<div class="readmore populer">
+<a href="nasgor-mawut.html">▷▷▶</a>
+	</div>
+</div>
+
 	<div class="kartu">
 		<div class="judul biru">
 <h2><a href="tahu-protein.html">Tahu Putih Berprotein</a></h2>
 		</div>
         <div class="konten">
-<img src="assets/images/tahu-premium-250.jpg" alt="Gambar Tahu Premium Berprotein dan Berasa" />
+<a href="assets/images/tahu-premium.jpeg" target="_blank"><img src="assets/images/tahu-premium-250.jpg" alt="Gambar Tahu Premium Berprotein dan Berasa" /></a>
 <p>Bosan dengan Tahu Putih Biasa? Ini Cara Membuat Tahu Putih "Berprotein" yang Gurih, Kenyal, dan Bikin Nagih!
 Halo, pecinta kuliner rumahan! Siapa di sini yang suka tahu putih, tapi ingin variasi tahu yang lezat dan ada rasanya?
 </p>
@@ -84,7 +103,7 @@ Tahu putih atau tahu sutra biasanya memang dikenal "polos", tidak ada rasanya, d
 <h2><a href="daging-sapi-glaze-kopi-kakao.html">Resep Kreatif Daging Sapi: Glaze Kopi-Kakao dengan Sambal Nanas Asap</a></h2>
 		</div>
         <div class="konten">
-<img src="assets/images/masakan-daging-sapi-unik-250.jpg" alt="Gambar masakan daging sapi" />
+<a href="assets/images/masakan-daging-sapi-unik.jpg" target="_blank"><img src="assets/images/masakan-daging-sapi-unik-250.jpg" alt="Gambar masakan daging sapi" /></a>
 <p>Kalau Anda ingin mencoba masakan daging sapi yang berbeda dari biasanya, resep ini bisa menjadi pilihan yang menarik. Perpaduan rasa gurih, manis, sedikit pahit, pedas, dan segar membuat hidangan ini terasa istimewa. Resep ini cocok untuk makan malam bersama keluarga atau untuk disajikan saat ada acara khusus.</p>
 <p>Daging sapi biasanya dimasak dengan bumbu yang cenderung umum, seperti kecap, lada, atau bawang. Pada resep ini, daging sapi diberi sentuhan kopi dan kakao untuk menghasilkan rasa yang lebih dalam dan kompleks.</p>
 		</div>
@@ -98,7 +117,7 @@ Tahu putih atau tahu sutra biasanya memang dikenal "polos", tidak ada rasanya, d
 <h2><a href="rahasia-membuat-es-krim-creamy.html">Rahasia Membuat Es Krim Rumahan yang Lembut dan Creamy</a></h2>
 		</div>
         <div class="konten">
-<img src="assets/images/es-krim-lembut-creamy-250.jpg" alt="Gambar es krim creamy dan lembut" />
+<a href="assets/images/es-krim-lembut-creamy.jpg" target="_blank"><img src="assets/images/es-krim-lembut-creamy-250.jpg" alt="Gambar es krim creamy dan lembut" /></a>
 
 <p>Pernahkah anda mencoba membuat es krim di rumah, tapi hasilnya justru keras seperti batu es atau berbutir kasar? Jangan khawatir, anda tidak sendirian! Banyak orang mengira kunci es krim enak hanya ada pada mesin mahal, padahal rahasianya terletak pada ilmu di balik bahan dan tekniknya.</p>
 <p>Kali ini, kita akan membongkar dapur rahasia agar es krim buatan anda memiliki tekstur yang lembut, creamy, dan lumer di mulut, persis seperti yang anda beli di gerai mahal. Yuk, simak tips berikut!</p>
@@ -113,7 +132,7 @@ Tahu putih atau tahu sutra biasanya memang dikenal "polos", tidak ada rasanya, d
 <h2><a href="nasi-timbal.html">Mengenal Nasi Timbal Sunda dan Lalapan: Perpaduan Sederhana yang Istimewa</a></h2>
 		</div>
         <div class="konten">
-<img src="assets/images/nasi-timbal-lalapan-250.jpg" alt="Gamnar Nasi Timbal Sunda" />
+<a href="assets/images/nasi-timbal-lalapan.jpeg" target="_blank"><img src="assets/images/nasi-timbal-lalapan-250.jpg" alt="Gamnar Nasi Timbal Sunda" /></a>
 <p>Kuliner Sunda dikenal dengan konsep "Segar, Asin, Pedas" yang selalu berhasil menggugah selera. Di antara banyaknya hidangan khas Sunda, ada satu kombinasi klasik yang kerap menjadi favorit banyak orang: Nasi Timbal dan Lalapan. Bukan sekadar nasi dan sayur, hidangan ini menyimpan keunikan rasa dan filosofi tersendiri.</p>
 		</div>
 		<div class="readmore">
@@ -125,7 +144,7 @@ Tahu putih atau tahu sutra biasanya memang dikenal "polos", tidak ada rasanya, d
 <h2><a href="kerang-hijau-bumbu-kuning.html">Resep Kerang Hijau Bumbu Kuning Sedap, Masakan Seafood Populer</a></h2>
 		</div>
         <div class="konten">
-<img src="assets/images/masakan-kuah-kuning-250.jpg" alt="Gambar Masakan Kuah Kuning" />
+<a href="assets/images/masakan-kuah-kuning.jpg" target="_blank"><img src="assets/images/masakan-kuah-kuning-250.jpg" alt="Gambar Masakan Kuah Kuning" /></a>
 <p>Kerang hijau merupakan salah satu hidangan laut (sea food) favorit banyak orang karena rasanya gurih dan teksturnya lembut. Salah satu olahan yang populer adalah kerang hijau bumbu kuning. Kuah rempahnya harum, segar, dan cocok disantap bersama nasi hangat.</p>
 <p>
 Namun, sebelum dimasak, kerang hijau perlu dibersihkan dengan benar agar tidak amis dan bebas pasir.</p>
@@ -139,7 +158,7 @@ Namun, sebelum dimasak, kerang hijau perlu dibersihkan dengan benar agar tidak a
 <h2><a href="resep-waffle-crispy.html">Resep Waffle Crispy</a></h2>
 		</div>
         <div class="konten">
-<img src="assets/images/kue-waffle-madu-250.jpg" alt="Gambar Waffle Crispy Madu" />
+<a href="assets/images/kue-waffle-madu.jpg" target="_blank"><img src="assets/images/kue-waffle-madu-250.jpg" alt="Gambar Waffle Crispy Madu" /></a>
 <p>Siapa yang bisa menolak kelezatan waffle hangat di pagi hari atau sebagai teman minum teh sore? Waffle memang makanan yang sangat versatile. Bisa manis, bisa gurih, tergantung selera.</p>
 <p>Hari ini, aku mau berbagi resep waffle andalan yang <em>crispy</em> di luar namun lembut di dalam. Yang bikin spesial? Kita akan berkreasi dengan topping! Bayangkan kombinasi <strong>madu yang manis alami, keju gurih yang meleleh, krim lembut, dan kesegaran ceri diatas kue waffle yang memikat.</strong></p>
 		</div>
@@ -153,7 +172,7 @@ Namun, sebelum dimasak, kerang hijau perlu dibersihkan dengan benar agar tidak a
 <h2><a href="membuat-salad-buah-creamy.html">Rahasia Salad Buah Creamy</a></h2>
 		</div>
         <div class="konten">
-<img src="assets/images/salad-buah-creamy-250.jpg" alt="Gambar Salar Buah Kecil" />
+<a href="assets/images/salad-buah-creamy.jpg" target="_blank"><img src="assets/images/salad-buah-creamy-250.jpg" alt="Gambar Salar Buah Kecil" /></a>
 <p>Siapa yang bisa menolak segarnya semangkuk salad buah di sore hari yang panas? Di Indonesia, salad buah bukan sekadar hidangan penutup, tapi juga cemilan sehat yang mudah ditemui, baik di pedagang kaki lima maupun restoran berbintang.</p>
 <p>Namun, rahasia utama kenikmatan salad buah sebenarnya bukan terletak pada buahnya saja, melainkan pada saus atau dressing yang digunakan. Saus inilah yang menyatukan berbagai tekstur dan rasa buah menjadi satu keharmonisan rasa...</p>
 		</div>
@@ -166,7 +185,7 @@ Namun, sebelum dimasak, kerang hijau perlu dibersihkan dengan benar agar tidak a
 <h2><a href="sayur-asem.html">Kreasi Sayur Asem</a></h2>
 		</div>
         <div class="konten">
-<img src="assets/images/sayur-asam-250.jpg" alt="Gambar Sayur Asem Kecil" />
+<a href="assets/images/sayur-asam.jpg" target="_blank"><img src="assets/images/sayur-asam-250.jpg" alt="Gambar Sayur Asem Kecil" /></a>
 <p>Sayur asem biasanya dikenal sebagai masakan rumahan yang sederhana. Tapi sebenarnya, dengan sedikit kreativitas, sayur asem bisa dibuat lebih unik, segar, dan menarik tanpa menghilangkan cita rasa tradisionalnya.</p>
 <p><h3>🥬 Resep Sayur Asem Bening Green Tomato</h3>🛒 <b>Bahan-bahan:</b></p>
 <ul>
@@ -299,13 +318,39 @@ Namun, sebelum dimasak, kerang hijau perlu dibersihkan dengan benar agar tidak a
 <div id="include-footer">
 </div>
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('list1.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('daftar').innerHTML = data;
+    });
+    });
+
   fetch('footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('include-footer').innerHTML = data;
     });
+    
+    function loadHTML(file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('daftar').innerHTML = data;
+        })
+        .catch(error => {
+          document.getElementById('daftar').innerHTML = 'Gagal memuat konten.';
+          console.error('Error:', error);
+        });
+    }
+     
+    function setActive(el) {
+      const links = document.querySelectorAll('.nomor a');
+      links.forEach(link => link.classList.remove('active'));
+      el.classList.add('active');
+    }
+  
 </script>
-
 </div>
 </body>
 </html>

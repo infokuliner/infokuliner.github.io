@@ -1,0 +1,107 @@
+<!DOCTYPE html />
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="description" content="" />
+<meta name="keyword" content="" />
+<link href="assets/stylesheet.css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="container" role="main">
+<div id="include-header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
+<main>
+<div class="layout">
+<div>
+
+<ol id="link-list">
+<li class="list" tags="masakan"><a href="nasgor-mawut.html">Resep Nasi Goreng Mawut (Magelangan) Komplit: Ayam, Bakso, Sosis – Kenyang dan Nagih!</a></li>
+<li class="list" tags="camilan"><a href="tahu-protein.html">Tahu Putih Berprotein</a></li>
+<li class="list" tags="masakan"><a href="daging-sapi-glaze-kopi-kakao.html">Resep Kreatif Daging Sapi: Glaze Kopi-Kakao dengan Sambal Nanas Asap</a></li>
+<li class="list" tags="minuman"><a href="rahasia-membuat-es-krim-creamy.html">Rahasia Membuat Es Krim Rumahan yang Lembut dan Creamy</a></li>
+<li class="list" tags="info"><a href="nasi-timbal.html">Mengenal Nasi Timbal Sunda dan Lalapan: Perpaduan Sederhana yang Istimewa</a></li>
+<li class="list" tags="masakan"><a href="kerang-hijau-bumbu-kuning.html">Resep Kerang Hijau Bumbu Kuning Sedap</a></li>
+<li class="list" tags="camilan"><a href="resep-waffle-crispy.html">Resep Kue Waffle Crispy</a></li>
+<li class="list" tags="minuman"><a href="membuat-salad-buah-creamy.html">Rahasia Salad Buah Creamy</a></li>
+<li class="list" tags="masakan"><a href="sayur-asem.html">Kreasi Sayur Asem</a></li>
+<li class="list" tags="masakan"><a href="masakan-ayam-sedap.html">Rahasia Masak Ayam Berkuah Aroma Sedap!</a></li>
+<li class="list" tags="tips"><a href="panci-presto.html">Manfaat, Bahaya Tersembunyi, dan Alternatif Panci Presto</a></li>
+<li class="list" tags="camilan"><a href="membuat-keripik-singkong.html">Resep Membuat Keripik Singkong Renyah</a></li>
+</ol>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const tagTarget = urlParams.get('tag');
+    if (tagTarget) {
+        const artikel = document.querySelectorAll('.list');
+        artikel.forEach(item => {
+            if (item.getAttribute('tags') !== tagTarget) {
+                item.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</div>
+<div>
+<div id="include-sidebar"></div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
+</main>
+
+<div id="include-footer"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('list1.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('daftar').innerHTML = data;
+    });
+    });
+
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+    
+    function loadHTML(file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('daftar').innerHTML = data;
+        })
+        .catch(error => {
+          document.getElementById('daftar').innerHTML = 'Gagal memuat konten.';
+          console.error('Error:', error);
+        });
+    }
+     
+    function setActive(el) {
+      const links = document.querySelectorAll('.nomor a');
+      links.forEach(link => link.classList.remove('active'));
+      el.classList.add('active');
+    }
+  
+</script>
+
+
+</div>
+</body>
+</html>

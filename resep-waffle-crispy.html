@@ -142,11 +142,38 @@
 
 <div id="include-footer"></div>
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('list1.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('daftar').innerHTML = data;
+    });
+    });
+
   fetch('footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('include-footer').innerHTML = data;
     });
+    
+    function loadHTML(file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('daftar').innerHTML = data;
+        })
+        .catch(error => {
+          document.getElementById('daftar').innerHTML = 'Gagal memuat konten.';
+          console.error('Error:', error);
+        });
+    }
+     
+    function setActive(el) {
+      const links = document.querySelectorAll('.nomor a');
+      links.forEach(link => link.classList.remove('active'));
+      el.classList.add('active');
+    }
+  
 </script>
 
 
