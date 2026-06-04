@@ -23,6 +23,9 @@
 <div class="layout">
 <div>
 
+<h2 id="judulTag"></h2>
+<p id="infoTag"></p>
+
 <div id="link-list">
 <div class="list" data-tag="masakan">
 <div>
@@ -104,6 +107,10 @@ Kerang hijau merupakan salah satu hidangan laut (sea food) favorit banyak orang 
     const tagTarget = urlParams.get('tag');
     if (tagTarget) {
         const artikel = document.querySelectorAll('.list');
+        const namaTag = tagTarget.replace(/-/g, ' ').replace(/\b\w/g, huruf => huruf.toUpperCase());
+        document.getElementById('judulTag').textContent = `Kategori: ${namaTag}`;
+   document.getElementById('infoTag').textContent = `Menampilkan semua konten dengan topik ${namaTag}`;
+        
         artikel.forEach(item => {
             if (item.getAttribute('data-tag') !== tagTarget) {
                 item.style.display = 'none';
@@ -111,6 +118,11 @@ Kerang hijau merupakan salah satu hidangan laut (sea food) favorit banyak orang 
         });
     }
 </script>
+
+
+   
+  
+   
 
 </div>
 <div>
