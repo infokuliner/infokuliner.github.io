@@ -100,15 +100,18 @@ border-left: 4px solid #F27D00; border-right: 4px solid #F27D00; padding: 0.75re
 margin: 0 0 1rem; background: #FFF5E3; border-radius: 20px; font-size: .9rem; }
 
 .daftar { min-height: 500px; }
-.daftar li { border-bottom: 1.2px solid #FFE0B2; padding: .5rem; margin: 0; }
-.daftar li::marker, .links li::marker, .footer-grid li::marker { content: "✦ "; color: #ff6600; font-size: .7rem; }
+.daftar li, #link-cat li { border-bottom: 1.2px solid #FFE0B2; padding: .5rem; margin: 0; }
+.daftar li::marker, .links li::marker, .footer-grid li::marker, #link-cat li::marker { content: "✦ "; color: #ff6600; font-size: .7rem; }
 .daftar li a { font-size: 1.2rem; }
-.daftar li:hover { background: #FFF5E3; }
+.daftar li:hover, #link-cat li:hover { background: #FFF5E3; }
 .links li a { font-size: 1.1rem; }
 .nomor { text-align: center; }
 .nomor a { font-size: 1.2rem; background: #F2AF6D; color: #fff; padding: .5rem .8rem; box-shadow: 1px 1px 5px #FFB76F; border-radius: 7px; }
 .nomor a.active { background: #44A0CE; box-shadow: 1px 1px 5px #44A0CE; }
 #link-cat, #link-list { font-family: "RedRose", var(--font); font-size: 1rem; }
+.list { display: flex; flex-direction: row; line-height: 1.1; }
+.list img { width: 80px; height: auto; margin: .3rem 1rem 1rem 0; }
+.list p { font-family: "CuteAurora", var(--font); font-size: .9rem; font-weight: 400; }
 
 /* Footer */
 footer { background: #444; color: #eee;
