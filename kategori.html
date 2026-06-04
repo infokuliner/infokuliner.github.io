@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title></title>
-<meta name="description" content="" />
-<meta name="keyword" content="" />
+<title>Kategori</title>
+<meta name="description" content="Halaman kategori kuliner dan resep." />
+<meta name="keyword" content="kategori, resep, tips, info" />
 <link href="assets/stylesheet.css" rel="stylesheet" />
 
 </head>
@@ -109,7 +109,7 @@ Kerang hijau merupakan salah satu hidangan laut (sea food) favorit banyak orang 
         const artikel = document.querySelectorAll('.list');
         const namaTag = tagTarget.replace(/-/g, ' ').replace(/\b\w/g, huruf => huruf.toUpperCase());
         document.getElementById('judulTag').textContent = `Kategori: ${namaTag}`;
-   document.getElementById('infoTag').textContent = `Menampilkan semua konten dengan topik ${namaTag}`;
+   document.getElementById('infoTag').textContent = `Menampilkan semua konten dengan topik ${namaTag}.`;
         
         artikel.forEach(item => {
             if (item.getAttribute('data-tag') !== tagTarget) {
